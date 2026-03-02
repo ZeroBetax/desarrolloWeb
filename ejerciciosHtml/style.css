@@ -1,0 +1,56 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400;700&family=PT+Sans+Caption&family=Puritan&display=swap');
+
+
+/*
+optimizacion
+
+header, li{
+    margin: 20px;
+    padding: 35px;
+    border: 1px solid black;
+}
+
+/* Los puntos especifican clases 
+
+header .texto-blanco{
+    background-color: pink;
+}
+
+especificidad
+.texto-blanco, .texto-blanco a{
+    color: white;
+    font-size: 20px;
+}
+ */
+
+:root{
+    --color-principal-verde: #006634;
+    --color-principal-naranja: #ed6615;
+
+    --fondo-secciones-claro: #efece3;
+
+    --fuente-titulos: "Fira Sans Extra Condensed";
+    --tamano-titulos-1: 35px;
+    
+    --margenes-entre-bloques: 100px;
+
+    --borde-redondeado: 10px;
+    --borde-grosor: 3px;
+    --borde-color: var(--color-principal-naranja);
+    --padding-boton: 10px;
+}
+
+.botones-cabecera a{
+    border: var(--borde-grosor) solid var(--borde-color);
+    text-decoration: none;
+    border-radius: var(--borde-redondeado);
+    padding: var(--padding-boton);
+}
