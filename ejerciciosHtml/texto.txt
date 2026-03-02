@@ -1,0 +1,7 @@
+ID:
+
+    NUMERO O ELEMENTO ALFANUMERICO UNICO DENTRO DEL DOCUMENTO(IDENTIFICADOR)
+
+CLASES:
+
+    Identificador grupal, agrupar elementos con las mismas caracteristicas
