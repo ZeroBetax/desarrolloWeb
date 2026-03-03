@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playlist+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Brush+Script+Std&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playlist+Script&display=swap");
 
@@ -18,8 +18,45 @@
 
 header{
     background-color: var(--color-detalle-verde);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
 }
 
 .logo img{
     height: 50px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--color-fondo);
+    font-family: var(--fuente-titulos);
+    font-weight: 500;
+}
+
+
+
+.boton-pedir a{
+    text-decoration: none;
+    background-color: #d59b8d;
+    width: 200px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
 }
