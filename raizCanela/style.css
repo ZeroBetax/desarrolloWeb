@@ -12,8 +12,13 @@
     --color-fondo: #fdf5e6;
     --color-texto: #6e4228;
     --color-detalle-verde: #87a96b;
+    --color-btn-naranja:#d59b8d;
+
     --fuente-titulos:"Montserrat";
     --fuente-parrafos:"Opens Sans";
+
+    --sombra-botones-clara: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+    --sombra-botones-oscura: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 header{
@@ -77,6 +82,30 @@ nav ul li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    
+    h1{
+        color: white;
+        font-size: 2rem; /* 1 rem equivale a 16px */
+        text-transform: uppercase;
+    }
+    p{
+        
+        color: white;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        background-color: var(--color-btn-naranja);
+        padding: 10px 30px;
+        border-radius: 5px;
+        box-shadow: var(--sombra-botones-clara);
+    }
+    .hero-botones{
+        margin-top: 20px;
+    }
 }
 
 .capa-oscura {
@@ -92,15 +121,3 @@ nav ul li a{
     z-index: 1;
 }
 
-.hero{
-    h1{
-        color: white;
-    }
-    p{
-        color: white;
-    }
-    a{
-        text-decoration: none;
-        color: white;
-    }
-}
