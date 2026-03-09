@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,21 +8,21 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playlist+Script&display=swap");
 
-:root{
+:root {
     --color-fondo: #fdf5e6;
     --color-texto: #6e4228;
     --color-detalle-verde: #87a96b;
-    --color-btn-naranja:#d59b8d;
+    --color-btn-naranja: #d59b8d;
 
-    --fuente-titulos:"Montserrat";
-    --fuente-parrafos:"Opens Sans";
+    --fuente-titulos: "Montserrat";
+    --fuente-parrafos: "Opens Sans";
 
     --sombra-botones-clara: rgba(255, 255, 255, 0.24) 0px 3px 8px;
     --sombra-botones-oscura: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    --margen-interna-secciones:50px
+    --margen-interna-secciones: 50px
 }
 
-header{
+header {
     background-color: var(--color-detalle-verde);
     display: flex;
     flex-direction: row;
@@ -31,23 +31,24 @@ header{
     padding: 10px 30px;
 }
 
-.logo img{
+.logo img {
     height: 50px;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     gap: 20px;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: var(--color-fondo);
     font-family: var(--fuente-titulos);
@@ -56,7 +57,7 @@ nav ul li a{
 
 
 
-.boton-pedir a{
+.boton-pedir a {
     text-decoration: none;
     background-color: #d59b8d;
     width: 200px;
@@ -76,7 +77,8 @@ nav ul li a{
     background-color: var(--color-fondo);
     background-image: url('img/fondo-hero.jpg');
     background-position: center;
-    background-size: cover; /* Respeta lo alto y se repite lo ancho */
+    background-size: cover;
+    /* Respeta lo alto y se repite lo ancho */
     background-repeat: no-repeat;
     position: relative;
     display: flex;
@@ -84,19 +86,22 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-    h1{
+
+    h1 {
         color: white;
-        font-size: 2rem; /* 1 rem equivale a 16px */
+        font-size: 2rem;
+        /* 1 rem equivale a 16px */
         text-transform: uppercase;
     }
-    p{
-        
+
+    p {
+
         color: white;
         font-size: 1.8rem;
         text-transform: capitalize;
     }
-    a{
+
+    a {
         text-decoration: none;
         color: white;
         background-color: var(--color-btn-naranja);
@@ -104,7 +109,8 @@ nav ul li a{
         border-radius: 5px;
         box-shadow: var(--sombra-botones-clara);
     }
-    .hero-botones{
+
+    .hero-botones {
         margin-top: 20px;
     }
 }
@@ -112,17 +118,19 @@ nav ul li a{
 .capa-oscura {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* La rgba son los mismos colores pero el ultimo digito es para opacidad y va de 0 a 1 */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* La rgba son los mismos colores pero el ultimo digito es para opacidad y va de 0 a 1 */
     position: absolute;
-    
-    z-index: 0; /* Hace que la capa sea la de atras del todo permitiendo organizar otras capas sobre ella para detalles visuales u otras cosas */
+
+    z-index: 0;
+    /* Hace que la capa sea la de atras del todo permitiendo organizar otras capas sobre ella para detalles visuales u otras cosas */
 }
 
-.capa-texto{
+.capa-texto {
     z-index: 1;
 }
 
-.rollos{
+.rollos {
     background-color: var(--color-texto);
     display: flex;
     flex-direction: column;
@@ -132,7 +140,7 @@ nav ul li a{
     color: var(--color-fondo);
 }
 
-.rollos-contenido{
+.rollos-contenido {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -141,23 +149,25 @@ nav ul li a{
     gap: 30px;
 }
 
-.rollos-descripcion{
+.rollos-descripcion {
     flex: 1;
     width: 100%;
 
-    h2{
+    h2 {
         font-family: var(--fuente-titulos);
         font-size: 4rem;
         line-height: 50px;
 
     }
-    h3{
+
+    h3 {
         font-family: var(--fuente-titulos);
         font-size: 1.5rem;
         margin: 20px 0;
 
     }
-    a{
+
+    a {
         text-decoration: none;
         color: var(--color-detalle-verde);
         background-color: var(--color-fondo);
@@ -169,7 +179,7 @@ nav ul li a{
     }
 }
 
-.rollos-productos{
+.rollos-productos {
     flex: 2;
     width: 100%;
     display: flex;
@@ -180,38 +190,49 @@ nav ul li a{
     gap: 20px;
 
 }
-.rollo-producto{
+
+.rollo-producto {
     border: 1px solid var(--color-btn-naranja);
     border-radius: 10px;
     background-color: var(--color-btn-naranja);
     overflow: hidden;
+    width: 230px;
 }
 
-.rollo-producto img{
+.rollo-producto img {
     width: 100%;
+
+    /* Diferentes imagenes con diferentes dimensiones */
+    height: 300px;
+    object-fit: cover;
 }
-.contenido-rollo{
+
+.contenido-rollo {
     padding: 20px;
-    
+
     font-family: var(--fuente-parrafos);
 
-    h2{
+    h2 {
         text-align: center;
         font-size: 1.5rem;
     }
-    h3{
+
+    h3 {
         font-size: 1.2rem;
     }
-    p{
+
+    p {
         margin: 15px 0px;
         margin-left: 20px;
 
     }
-    .precio{
+
+    .precio {
         font-size: 1.5rem;
 
     }
-    .precio a{
+
+    .precio a {
         text-decoration: none;
         color: var(--color-detalle-verde);
         background-color: var(--color-fondo);
@@ -220,17 +241,17 @@ nav ul li a{
         text-align: center;
         font-size: 1rem;
     }
-    
+
 }
 
-.rollos-ingredientes{
+.rollos-ingredientes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
     gap: 20px;
 
-    .rollo-ingrediente{
+    .rollo-ingrediente {
         background-color: var(--color-detalle-verde);
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
         padding: 15px;
@@ -241,3 +262,61 @@ nav ul li a{
 
 }
 
+.estilos-boton{
+    text-decoration: none;
+    color: var(--color-detalle-verde);
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: var(--color-fondo);
+}
+.menu-dia {
+    background-color: var(--color-fondo);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: var(--margen-interna-secciones);
+    color: var(--color-texto);
+
+    h2 {
+        font-size: 3rem;
+        font-family: var(--fuente-titulos);
+
+    }
+
+    .menu-items {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opcion-almuerzo {
+        box-shadow: var(--sombra-botones-oscura);
+        padding: 20px;
+        border-radius: 20px;
+        text-align: left;
+        width: 230px;
+
+        img {
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+    }
+
+    a {
+        background-color: var(--color-texto);
+        color: var(--color-fondo);
+        
+
+    }
+
+}
