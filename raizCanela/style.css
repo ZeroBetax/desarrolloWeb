@@ -58,5 +58,49 @@ nav ul li a{
     padding: 20px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    font-family: var(--fuente-titulos);
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.hero {
+    height: calc(100vh - 74px);
+    background-color: var(--color-fondo);
+    background-image: url('img/fondo-hero.jpg');
+    background-position: center;
+    background-size: cover; /* Respeta lo alto y se repite lo ancho */
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.capa-oscura {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* La rgba son los mismos colores pero el ultimo digito es para opacidad y va de 0 a 1 */
+    position: absolute;
     
+    z-index: 0; /* Hace que la capa sea la de atras del todo permitiendo organizar otras capas sobre ella para detalles visuales u otras cosas */
+}
+
+.capa-texto{
+    z-index: 1;
+}
+
+.hero{
+    h1{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
